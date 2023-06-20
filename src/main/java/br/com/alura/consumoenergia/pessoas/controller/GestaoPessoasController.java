@@ -33,7 +33,7 @@ public class GestaoPessoasController {
         }
         Pessoa pessoas = new Pessoa(pessoa.getNome(), pessoa.getDataNascimento(), pessoa.getSexo(), pessoa.getParentesco());
         repositorioPessoas.salvar(pessoas);
-        return ResponseEntity.ok("Pessoa cadastrada com sucesso");
+        return ResponseEntity.ok("Pessoa cadastrada com sucesso ");
     }
 
     private <T> Map<Path, String> validar(T  form) {
